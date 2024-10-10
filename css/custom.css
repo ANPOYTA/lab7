@@ -1,0 +1,118 @@
+/* Підключаємо необхідні шрифти */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Tenor+Sans&display=swap');
+
+/* Загальні стилі для сторінки */
+body {
+    font-family: 'Tenor Sans', sans-serif; /* Основний шрифт для тексту */
+    background-color: #FAF3E0; /* Світлий пастельний фон */
+    color: #4A4A4A; /* Темно-сірий текст */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Стиль для заголовків */
+h1, h2, h3 {
+    font-family: 'Rubik Bubbles', cursive; /* Шрифт для заголовків */
+    color: #4D9078; /* Пастельний зелений */
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Стиль для основного контейнера */
+.container {
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #FFF5E1; /* Пастельний жовтий фон для контейнера */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Анімація при наведенні */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Плавний підйом контейнера при наведенні */
+}
+
+/* Стиль для посилань */
+a {
+    color: #4D9078; /* Пастельний зелений для посилань */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #E8A87C; /* Пастельний рожевий при наведенні */
+}
+
+/* Галерея зображень */
+.popup-gallery a img {
+    border: 2px solid #B8E1DD; /* Пастельний блакитний бордюр */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popup-gallery a img:hover {
+    transform: scale(1.05); /* Плавне збільшення зображення при наведенні */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стиль для каруселі Owl Carousel */
+.owl-carousel .item {
+    background-color: #E8A87C; /* Пастельний рожевий фон для елементів каруселі */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.owl-carousel .item:hover {
+    transform: scale(1.05); /* Плавне збільшення елементів каруселі при наведенні */
+}
+
+/* Анімація для Accordion (розгортання/згортання) */
+#accordion h3 {
+    background-color: #B8E1DD; /* Пастельний блакитний фон для заголовків секцій */
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#accordion h3:hover {
+    background-color: #4D9078; /* Пастельний зелений при наведенні */
+}
+
+#accordion div {
+    background-color: #FAF3E0; /* Фон для контенту секцій */
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+.ui-accordion-content-active {
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* Анімація для Draggable */
+#draggable {
+    width: 200px;
+    height: 200px;
+    background-color: #E8A87C; /* Пастельний рожевий для фону */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#draggable:hover {
+    transform: scale(1.1); /* Збільшення при наведенні */
+}
